@@ -1,0 +1,152 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --darker-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --lighter-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+
+* {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.calc {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.calc__content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 60rem;
+}
+
+.calc__input__section {
+  padding: 0.5rem;
+}
+
+.calc__output__section {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--very-dark-cyan);
+}
+
+.calc__item {
+  margin-bottom: 2rem;
+}
+
+.calc__item--tight {
+  margin-bottom: 1rem;
+}
+
+.calc__item__horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc__title {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.calc__title--dark {
+  color: var(--darker-grayish-cyan);
+}
+
+.calc__title--light {
+  color: var(--white);
+}
+
+.calc__subtitle {
+  color: var(--dark-grayish-cyan);
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.calc__input {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5em 0.85em;
+  width: 100%;
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 0.25em;
+  text-align: right;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.calc__input::placeholder {
+  color: var(--dark-grayish-cyan);
+}
+
+.calc__input:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--strong-cyan);
+  outline: none;
+}
+
+.calc__input--dollar {
+  background: url(images/icon-dollar.svg) no-repeat 0.85em,
+    var(--lighter-grayish-cyan);
+  background-size: 0.6em;
+}
+
+.calc__input--person {
+  background: url(images/icon-person.svg) no-repeat 0.85em,
+    var(--lighter-grayish-cyan);
+  background-size: 0.6em;
+}
+
+.calc__tip__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.calc__retun {
+  color: var(--strong-cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.calc__button {
+  font-size: 1.1rem;
+  border: none;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border-radius: 0.25em;
+  padding: 0.5em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.calc__button__reset {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: var(--strong-cyan);
+  border: none;
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+  border-radius: 0.25em;
+  padding: 0.75em;
+  cursor: pointer;
+}
